@@ -1,0 +1,16 @@
+body{
+    background-color:#0000ff;
+    text-align:center;
+}
+
+.button {
+    background-color: WHITE;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration-line:underline;
+    text-decoration-color:brown;
+    display: inline-block;
+    font-size: 16px;
+}
