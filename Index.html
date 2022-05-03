@@ -1,0 +1,206 @@
+<html>
+<head>
+    <title>MY PERSONAL WEBSITE</title>
+    <link rel="stylesheet" href="./CSS/q1.css">
+</head>
+<body>
+    <br><b>
+        <font color="magenta" size="6" id="1">HELLO EVERYONE.I AM PRANAV GUPTA. I LIVE IN NEW DELHI.</font>
+    </b>
+</body></br>
+<br></br><br></br><br></br>
+<img src="Media/PranavGupta.jpeg" style="width:300px;height:400px;" alt="PRANAV GUPTA">
+<br></br><br></br><br></br>
+<b>
+    <h1>
+        <center>
+            <font color="PINK" id="2">EDUCATION BACKGROUND</font>
+        </center>
+    </h1>
+</b>
+<h3>
+    <table border="5" text align="center" id="3">
+        <TR>
+            <TD>1.BOARD TO WHICH I WAS ENROLLED IN SCHOOL LIFE</TD>
+            <TD>2.CLASS 10 BOARDS</TD>
+            <TD>3.CLASS 12 BOARDS</TD>
+            <TD>4.COLLEGE AND BRANCH</TD>
+        </TR>
+        <TR>
+            <TD>I WAS ENROLLED IN CBSE BOARD THROUGHOUT MY SCHOOL LIFE.</TD>
+            <TD>I SCORED 96.4% MARKS OVERALL IN CLASS 10 BOARDS.</TD>
+            <TD>I SCORED 95.6% MARKS OVERALL IN CLASS 12 BOARDS.</TD>
+            <TD>RIGHT NOW I AM PURSUING CSE IN IIIT HYDERABAD.</TD></br>
+        </TR>
+    </table>
+</h3>
+<br></br><br></br><br></br>
+<b>
+    <h1>
+        <center>
+            <font color="RED" id="4">ACHIEVEMENTS</font>
+        </center>
+    </h1>
+</b>
+<h3>
+    <table border="5" text align="center" id="5">
+        <TR>
+            <TD>I PARTICIPATED IN JUNIOR MUN HELD AT MY SCHOOL AND I WAS REWARDED SPECIAL MENTION AWARD IN IT.</TD>
+            <TD>I REPRESENTED MY SCHOOL IN INTER SCHOOL CHESS COMPETITION AND WON A BRONZE MEDAL IN IT.</TD>
+            <TD>I PARTICIPATED IN INTERNATIONAL FRENCH OLYMPIAD IN CLASS 6th AND GOT A SILVER MEDAL FOR PROFICIENCY IN
+                FRENCH LANGUAGE.</TD>
+            <TD>I CLEARED KVPY IN CLASS 12th AND SECURED AIR-837.</TD>
+            <TD>I CRACKED JEE-MAINS AND SECURED AIR-167. ALSO I HAD A PERFECT 100/100 SCORE IN MATHS IN JEE MAINS.</TD>
+            <TD>I CRACKED JEE ADVANCED AND SECURED AIR-2301.</TD>
+        </TR>
+    </table>
+</h3>
+<br></br><br></br><br></br>
+<b>
+    <h1>
+        <center>
+            <font color="INDIGO" id="6">SKILLS</font>
+        </center>
+    </h1>
+</b>
+<h3>
+    <font color="brown" id="7" <ul>
+        <li>GOOD AT SINGING.</li>
+        <li>I PLAY BADMINTON AND TENNIS REALLY WELL.</li>
+        <li>I PLAY CRIKET,CHESS AND CARROM TOO.</li>
+        <li>GOOD AT MATHEMATICS.</li>
+        <li>HANDLE SITUATIONS WITH COURAGE AND ANALYSE EACH AND EVERY ASPECT CAREFULLY BEFORE JUMPING TOO ANY
+            CONCLUSION.</li>
+        <li>CAN WORK HARD TO ACHIEVE SOMETHING OVER A PERIOD OF TIME.</li>
+        </ul>
+</h3>
+<br></br><br></br><br></br>
+<b>
+    <h1>
+        <font color="purple" id="8">NEWS AND UPDATES</font>
+    </h1>
+</b>
+<h3>
+    <a href="https://www.iiit.ac.in/">
+        <font color="white" id="9">CLICK HERE TO OPEN THE HOME PAGE OF THE COLLEGE'S WEBSITE</font>
+    </a>
+
+    <br></br><br></br>
+
+    <a href="Media/PRANAVGUPTA_2021101095.jpeg">
+        <font color="white" id="10">CLICK HERE TO OPEN A FILE IN LOCAL SYSTEM</font>
+    </a>
+</h3>
+<br></br><br></br><br></br>
+<fieldset>
+    <legend style="font-size: 30px">Insert Data</legend>
+<input
+    id="inpdata"
+    type="text"
+    placeholder="enter the news"
+    size="40"
+/>
+    <button type="button" id="btn">Insert News</button>
+</fieldset>
+
+<script>
+    const inpdata = document.getElementById("inpdata");
+    const btn = document.getElementById("btn");
+    const newsupdate = document.getElementById("8");
+
+    btn.onclick = function () {
+        const key = "";
+        const data = inpdata.value;
+        console.log(data);
+        console.log(key);
+
+        if (data) {
+            localStorage.setItem(data, key);
+            location.reload();
+        }
+    };
+
+    for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        const value = localStorage.getItem(key);
+        newsupdate.innerHTML += `<br />${key} ${value}`;
+    }
+</script>
+<br></br><br></br><br></br>
+<p id="UP" style="font-size: 16px; font-weight: bold;">
+</p>
+<button onclick="Run()">
+    YELLOW COLOUR
+</button>
+<button onclick="Run1()">
+    RED COLOUR
+</button>
+<button onclick="Run2()">
+    PINK COLOUR
+</button>
+<button onclick="Run3()">
+    PURPLE COLOUR
+</button>
+<button onclick="Run4()">
+    BLUE COLOUR
+</button>
+<script src="JS/q1.js">
+</script>
+<p id="DOWN" style="color:green; font-size: 20px; font-weight: bold;">
+</p>
+<br></br><br></br><br></br>
+<button onclick="Font1()">
+    FONT 10
+</button>
+<button onclick="Font2()">
+    FONT 20
+</button>
+<button onclick="Font3()">
+    FONT 30
+</button>
+<div style="border:5px; color:grey" id="container" class="container">
+</div>
+<script>
+    var cont = document.getElementById("container");
+    def1=document.getElementById("1");
+    def2=document.getElementById("2");
+    def3=document.getElementById("3");
+    def4=document.getElementById("4");
+    def5=document.getElementById("5");
+    def6=document.getElementById("6");
+    def7=document.getElementById("7");
+    def8=document.getElementById("8");
+    def9=document.getElementById("9");
+    def10=document.getElementById("10");
+    def11=document.getElementById("11");
+    def12=document.getElementById("12");
+    function changeSizeByBtn(size) {
+        cont.style.fontSize = size;
+        def1.style.fontSize = size;
+        def2.style.fontSize = size;
+        def3.style.fontSize = size;
+        def4.style.fontSize = size;
+        def5.style.fontSize = size;
+        def6.style.fontSize = size;
+        def7.style.fontSize = size;
+        def8.style.fontSize = size;
+        def9.style.fontSize = size;
+        def10.style.fontSize = size;
+        def11.style.fontSize = size;
+        def12.style.fontSize = size;
+    }
+    function Font1() {
+        var x = 10;
+        changeSizeByBtn(x);
+    }
+    function Font2() {
+        var x = 20;
+        changeSizeByBtn(x);
+    }
+    function Font3() {
+        var x = 30;
+        changeSizeByBtn(x);
+    }
+</script>
+</body>
+</html>
